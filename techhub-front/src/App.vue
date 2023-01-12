@@ -1,23 +1,22 @@
 <template>
-    <div>
-        <the-navbar />
-        <TheMain />
-    </div>
+<div class="container">
+<Header />
+</div>
 </template>
 
 <script>
-
-import TheNavbar from "@/components/TheNavbar";
-import TheMain from "@/components/TheMain";
-export default {
+import  Header from './components/HeaderSite.vue'
+export default{
   name: 'App',
-  components: {
-      TheNavbar,
-      TheMain
-  }
+  components:{Header}
 }
 </script>
 
-<style>
-
+<style scoped>
+*{
+cursor: pointer;
+}
+body{
+  background-color: yellow;
+}
 </style>
