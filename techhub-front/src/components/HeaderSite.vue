@@ -1,5 +1,5 @@
 <template>
-   <div class="container">
+    
      <header class="site_header">
 <div class="nav_bar">
 <h1>TechHub <span class="logo"></span></h1>
@@ -28,19 +28,13 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, magni.
 
     <!-- main start -->
 
-    <main class="site_main"> 
-<section class="main_first">
-    <div class="frontend">
-
-    </div>
-    <div class="beckend">
-
-    </div>
-</section>
-    </main>
-
-   </div>
+   
+   
 </template>
+
+
+
+
 <script>
 export default {
     name: "HeaderSite"
@@ -56,11 +50,7 @@ body{
     color: #232322;
    
 }
-.container{
-    width: 1290px;
-    margin: auto;
-    border: dotted 2px red;
-}
+
 .site_header{
     width: 1350px;
     height: 500px;
