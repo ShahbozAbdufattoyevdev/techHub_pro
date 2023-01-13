@@ -4,6 +4,7 @@
 <div class="container">
     <div class="nav_bar">
 <h1>TechHub <span class="logo"><img src="assets/" alt=""></span></h1>
+<input class="search" name="search" type="search" placeholder="Search our lessons">
 <ul class="lists">
     <li><a href="#">About</a></li>
     <li><a href="#">Goals</a></li>
@@ -14,8 +15,12 @@
 
 <div class="header_style">
 <div>
-<h1>Lorem ipsum dolor sit amet.</h1>
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, magni.
+<h1>Coding simple with us</h1>
+<h2>TechHub jamoasi sizni o'z kurslariga taklif qiladi</h2>
+<ul class="btn_list">
+    <button>Yozilish</button>
+<button>Demo lesson</button>
+</ul>
 </div>
 
 </div>
@@ -42,28 +47,29 @@ export default {
 
 
 
-
 <style scoped>
 body{
     background-color: yellow;
     color: #232322;
    
 }
+*{
+    list-style: none;
+}
 .container{
     width: 1290px;
     margin: auto;
 }
 .site_header{
-    
     height: 700px;
 }
 button{
-    width: 140px;
+    width: 160px;
     height: 35px;
     border-radius: 25px;
     background-color: rgb(96, 230, 163);
     color: #232322;
-    border: none;
+   border: transparent;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -73,6 +79,7 @@ button:hover{
     background-color: yellow;
     transition: all 0.5s;
     color: #232322;
+    border:ridge #232322 2px;
 }
 button:hover::after{
     content: "→";
@@ -87,6 +94,7 @@ button:hover::after{
     width: 1290px;
     margin-right: auto;
     margin-left: auto;
+    z-index: 111;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -106,8 +114,13 @@ button:hover::after{
     list-style: none;
  
     font-size: 20px;
-    position: relative;
-    left: 200px;
+ 
+}
+.btn_list{ 
+    display: flex;
+}
+.btn_list button{
+    width: 180px;
 }
 .lists li a{
  text-decoration: none;
@@ -121,10 +134,25 @@ button:hover::after{
     width: 100%;
     display: flex;
  justify-content: space-between;
+ position: relative;
+ top: 200px;
 }
-
-
-
+.search{
+    width: 300px;
+    height: 35px;
+    border-radius: 20px;
+    outline: none;
+   border: none;
+   background-color: rgb(96, 230, 163); 
+}
+.search::placeholder{
+    color: #232323;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.search::after{
+    content: '🔎';
+}
 
 
 

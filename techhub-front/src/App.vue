@@ -20,6 +20,7 @@ export default{
 <style scoped>
 *{
 cursor: pointer;
+list-style: none;
 }
 
 .container{
