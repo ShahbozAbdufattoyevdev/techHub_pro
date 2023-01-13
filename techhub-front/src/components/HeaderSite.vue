@@ -2,7 +2,7 @@
     
      <header class="site_header">
 <div class="nav_bar">
-<h1>TechHub <span class="logo"></span></h1>
+<h1>TechHub <span class="logo"><img src="" alt=""></span></h1>
 <ul class="lists">
     <li><a href="#">About</a></li>
     <li><a href="#">Goals</a></li>
@@ -17,9 +17,6 @@
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, magni.
 </div>
 
-<div>
-
-</div>
 </div>
     </header>
 
@@ -78,6 +75,7 @@ button:hover::after{
     position: relative;
     left: 10px;
     color: #232322;
+    
 }
 
 .nav_bar{
@@ -120,12 +118,6 @@ button:hover::after{
  justify-content: space-between;
 }
 
-.header_style div:nth-child(1){
-    width: 400px;
-    height: 400px;
-    border-radius: 100%;
-    background: radial-gradient(aqua, yellow, #232323 );
-}
 
 
 
