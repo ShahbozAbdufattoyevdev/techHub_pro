@@ -23,7 +23,6 @@
 <!-- first section end  -->
 
 <!-- second section start  -->
-<div class="container">
     
 <h2 class="heads">Ochiq darslar</h2>
 <ul class="btn_list">
@@ -34,6 +33,7 @@
     <button>Python</button>
 </ul>
 <section class="main_second">
+<div class="container">
 <div>
 <h2>Rasm, videolink,</h2>
 </div>
@@ -45,9 +45,9 @@
 </div>
 <div>
 <h2>Rasm, videolink,</h2>
+</div>
 </div>
 </section>
-</div>
     </main>
     
 </template>
@@ -67,11 +67,12 @@ export default {
 .container{
     width: 1290px;
     margin: auto;
+  
 }
  .main_first{
-    background-color: #232323;
+   background-color:rgb(124, 124, 16) ;
     height: 500px;
-    color: yellow;
+    color: #232323;
  padding-left: -15px;
  }
 .main_first .container{
@@ -84,10 +85,10 @@ padding-top:50px ;
     width: 400px;
     height: 400px;
   transition: all 0.5s;
-    border: 1px solid yellow;
+    border: 1px solid #232323;
 }
 .main_first .container div:hover{
-      box-shadow: 0 0 15px yellow;
+      box-shadow: 0 0 15px #232323;
       transform: translate(7px, -7px);
 }
 .getstyle{
@@ -116,7 +117,7 @@ padding-top:50px ;
 
 /* main second  */
 
-.main_second{
+.main_second .container{
     width: 100%;
     height: 400px;
     background-color:rgb(124, 124, 16) ;
@@ -126,8 +127,10 @@ padding-top:50px ;
 }
 .btn_list{
     display: flex;
-    width: 100%;
+    width: 1290px;
     gap: 50px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .btn_list button{
     width: 120px;
@@ -142,7 +145,7 @@ padding-top:50px ;
       box-shadow:inset 0 0 15px rgb(96, 230, 163);
     border: 2px solid  rgb(96, 230, 163);
 }
-.main_second div{
+.main_second .container div{
     width: 290px;
     height: 300px;
     background-color: antiquewhite;
