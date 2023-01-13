@@ -1,8 +1,9 @@
 <template>
     
      <header class="site_header">
-<div class="nav_bar">
-<h1>TechHub <span class="logo"><img src="" alt=""></span></h1>
+<div class="container">
+    <div class="nav_bar">
+<h1>TechHub <span class="logo"><img src="assets/" alt=""></span></h1>
 <ul class="lists">
     <li><a href="#">About</a></li>
     <li><a href="#">Goals</a></li>
@@ -17,6 +18,7 @@
 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, magni.
 </div>
 
+</div>
 </div>
     </header>
 
@@ -47,10 +49,13 @@ body{
     color: #232322;
    
 }
-
+.container{
+    width: 1290px;
+    margin: auto;
+}
 .site_header{
-    width: 1350px;
-    height: 500px;
+    
+    height: 700px;
 }
 button{
     width: 140px;

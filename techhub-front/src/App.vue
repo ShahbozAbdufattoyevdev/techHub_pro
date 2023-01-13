@@ -1,8 +1,8 @@
 <template>
-<div class="container">
+ 
 <Header />
  <MainApp />
-</div>
+ 
 </template>
 
 <script>
@@ -21,9 +21,7 @@ export default{
 *{
 cursor: pointer;
 }
-body{
-  background-color: yellow;
-}
+
 .container{
     width: 1290px;
     margin: auto;
