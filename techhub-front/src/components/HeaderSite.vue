@@ -3,12 +3,11 @@
      <header class="site_header">
 <div class="container">
     <div class="nav_bar">
-<h1>TechHub <span class="logo"><img src="assets/" alt=""></span></h1>
+<h1>TechHub <span class="logo"><img src="" alt="" ></span></h1>
 <input class="search" name="search" type="search" placeholder="Search our lessons">
 <ul class="lists">
     <li><a href="#">About</a></li>
     <li><a href="#">Goals</a></li>
-
 </ul>
 <button>Contact</button>
 </div>
@@ -30,10 +29,6 @@
 
     <!-- header end  -->
 
-    <!-- main start -->
-
-   
-   
 </template>
 
 
@@ -62,6 +57,7 @@ body{
 }
 .site_header{
     height: 700px;
+    line-height: 50px;
 }
 button{
     width: 160px;
@@ -101,12 +97,7 @@ button:hover::after{
     background-color: rgb(124, 124, 16);
  position: fixed;
 }
-.logo{
-    width: 50px;
-    height:50px;
-    border-radius: 50%;
-    background-image: url();
-}
+
 .lists{
     width: 200px;
     display: flex;
@@ -150,9 +141,7 @@ button:hover::after{
     font-size: 15px;
     padding-left: 10px;
 }
-.search::after{
-    content: '🔎';
-}
+
 
 
 

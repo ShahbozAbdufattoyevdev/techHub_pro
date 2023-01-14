@@ -3,19 +3,22 @@
 <h2 class="reason heads">Nima uchun aynan <span class="getstyle">TechHub</span></h2>
     <section class="main_first">
 <div class="container">
-    <div class="education">
+    <div class="education font">
 <h2>Education</h2>
-<p>Bizning darslar tajribali ustzlar tomonidan olib boriladi,</p>
+<p>Bizning darslar tajribali ustzlar tomonidan olib boriladi. Hozirda biz barcha o'qituvchilarimiz dasturlash sohasida 2 yildan ortiq tajribaga ega. Va hozirda kurslarimiz online shaklda bolmoqda. Va online kurslar hozirda kochilik uchun maqul kelmoqda</p>
+<button>Ko'proq ko'rish</button>
     </div>
 
-    <div class="aloritmlash">
+    <div class="aloritmlash font">
 <h2>Algoritmlash</h2>
-<p>Bizning kursimizni boshqalardan farqi asosan bizda Algoritmlashga etibor beriladi</p>
+<p>Kursimizni boshqalardan farqi asosan bizda Algoritmlashga etibor beriladi. Chunki hozirgi texnologiya rivojlangan davrda kuchli algoritmlar bilangina kuchli loyihalarni amalga oshirish mumkin.Har qanday dasturlash tilini mukammal organgan yahshi albatta</p>
+<button>Ko'proq ko'rish</button>
     </div>
 
-    <div class="practise">
+    <div class="practise font">
 <h1>Practics</h1>
-<p>bizning kurslarimizni bitirgan har bir o'quvchi haqiyqiy realniy proektda ishlash imkoniyatiga ega boladi, va kurslarimizni alo darajada tugatgan o'quvchilar o'zimizning "TechHub" kompaniyasi tomonidan ish bilan taminlanadi</p>
+<p>Bizning kurslarimizni bitirgan har bir o'quvchi haqiyqiy realniy proektda ishlash imkoniyatiga ega boladi, va kurslarimizni alo darajada tugatgan o'quvchilar o'zimizning "TechHub" kompaniyasi tomonidan ish bilan taminlanadi</p>
+<button>Ko'proq ko'rish</button>
     </div>
 </div>
     </section>
@@ -89,6 +92,7 @@ padding-top:50px ;
 }
 .main_first .container div:hover{
       box-shadow: 0 0 15px #232323;
+      color: yellow;
       transform: translate(7px, -7px);
 }
 .getstyle{
@@ -112,9 +116,41 @@ padding-top:50px ;
     top: -5px;
     left: -5px;
 }
+.font{
+    line-height: 35px;
+    font-size: 20px;
+padding-left: 10px;
+}
 
-
-
+button{
+    width: 180px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: rgb(96, 230, 163);
+    color: #232322;
+   border: transparent;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button:hover{
+    background-color: yellow;
+    transition: all 0.5s;
+    color: #232322;
+    border:ridge #232322 2px;
+}
+button:hover::after{
+    content: "→";
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    color: #232322;
+    
+}
+.font button{
+    margin-bottom: 0;
+}
 /* main second  */
 
 .main_second .container{
