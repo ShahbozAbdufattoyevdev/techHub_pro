@@ -3,8 +3,8 @@
      <header class="site_header">
 <div class="container">
     <div class="nav_bar">
-<h1>TechHub <span class="logo"><img src="" alt="" ></span></h1>
-<input class="search" name="search" type="search" placeholder="Search our lessons">
+<h1>TechHub <div class="logo"></div></h1>
+<li class="search"><input class="search" name="search" type="search" placeholder="Search our lessons"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path><path d="M11.412 8.586c.379.38.588.882.588 1.414h2a3.977 3.977 0 0 0-1.174-2.828c-1.514-1.512-4.139-1.512-5.652 0l1.412 1.416c.76-.758 2.07-.756 2.826-.002z"></path></svg></span></li>
 <ul class="lists">
     <li><a href="#">About</a></li>
     <li><a href="#">Goals</a></li>
@@ -25,7 +25,7 @@
 </div>
 </div>
     </header>
-
+ 
 
     <!-- header end  -->
 
@@ -50,6 +50,7 @@ body{
 }
 *{
     list-style: none;
+        line-height: 50px;
 }
 .container{
     width: 1290px;
@@ -57,7 +58,7 @@ body{
 }
 .site_header{
     height: 700px;
-    line-height: 50px;
+
 }
 button{
     width: 160px;
@@ -85,7 +86,9 @@ button:hover::after{
     color: #232322;
     
 }
-
+.search{
+    display: flex;
+}
 .nav_bar{
     width: 1290px;
     margin-right: auto;
@@ -96,6 +99,20 @@ button:hover::after{
     align-items: center;
     background-color: rgb(124, 124, 16);
  position: fixed;
+}
+.nav_bar h1{
+gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+   background-image: url(../assets/Logo.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
 .lists{
@@ -119,7 +136,7 @@ button:hover::after{
 }
 .lists li a:hover{
     color: aquamarine;
-    text-decoration: #232323;
+    text-decoration: underline rgb(96, 230, 163);
 }
 .header_style{
     width: 100%;
@@ -127,14 +144,16 @@ button:hover::after{
  justify-content: space-between;
  position: relative;
  top: 200px;
+
 }
 .search{
     width: 300px;
     height: 35px;
-    border-radius: 20px;
+    border-radius:3px;
     outline: none;
    border: none;
    background-color: rgb(96, 230, 163); 
+   font-size: 15px;
 }
 .search::placeholder{
     color: #232323;
