@@ -1,17 +1,17 @@
 <template>
  
-<Header />
+<HeaderSite />
  <MainApp />
- 
+<TheFooter />
 </template>
 
 <script>
-import  Header from './components/HeaderSite.vue'
+import HeaderSite from './components/HeaderSite.vue'
 import MainApp from './components/MainApp.vue'
+import TheFooter from './components/TheFooter.vue'
 export default{
   name: 'App',
-  components:{Header, MainApp},
- 
+  components:{HeaderSite, MainApp, TheFooter},
 }
 </script>
 

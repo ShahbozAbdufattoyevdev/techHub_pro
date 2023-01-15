@@ -43,14 +43,10 @@ export default {
 
 
 <style scoped>
-body{
-    background-color: yellow;
-    color: #232322;
-   
-}
+
 *{
     list-style: none;
-        line-height: 50px;
+    line-height: 50px;
 }
 .container{
     width: 1290px;
@@ -58,7 +54,6 @@ body{
 }
 .site_header{
     height: 700px;
-
 }
 button{
     width: 160px;
@@ -91,13 +86,14 @@ button:hover::after{
 }
 .nav_bar{
     width: 1290px;
+    height:80px;
     margin-right: auto;
     margin-left: auto;
     z-index: 111;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(124, 124, 16);
+    background-color: #FEDD5B;
  position: fixed;
 }
 .nav_bar h1{
@@ -106,8 +102,8 @@ gap: 10px;
     align-items: center;
 }
 .logo{
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
    background-image: url(../assets/Logo.jpg);
    background-size: cover;

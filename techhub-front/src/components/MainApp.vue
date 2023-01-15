@@ -26,7 +26,19 @@
 <!-- first section end  -->
 
 <!-- second section start  -->
-    
+
+    <section class="auditory_section">
+        <h1 style="text-align:center; padding-top:50px; color:">Bizning auditorya</h1>
+<div class="container">
+<div class="sircle"><div><h1>200</h1></div></div>
+<div class="sircle"><div><h1>130</h1></div></div>
+<div class="sircle"><div><h1>159</h1></div></div>
+</div>
+    </section>
+
+
+
+    <!-- second section end  -->
 <h2 class="heads">Ochiq darslar</h2>
 <ul class="btn_list">
     <button>Html/Css</button>
@@ -80,7 +92,7 @@ Hech ikkilanmay ushbu kursda taʼlim olishni barcha IT ga qiziqgan va kelajakda 
  <img src="../assets/dev2.jpg" alt="">
 </div>
 <div class="definition">
-<h2>Shahboz</h2>
+<h3>Shahboz</h3>
 <p>Andijon</p>
 <p>Men TechHu bda o'qishdan oldin JavaScript ni oʻqib tugatganman deb oʻylardim, lekin faqat fundamental qismini oʻqigan ekanman.
 Men kursni asosan algoritmlashga eʼtibor berilgani uchun tanlaganman, chunki oldin faqat nazariy va web/dom qismidan bir nechta yaxshiroq proyekt qilganmiz, bu esa JavaScript ni tushunishga  kamlik qilishini darslar davomida bilib bormoqdaman.
@@ -94,11 +106,13 @@ In shaa Alloh, TechHubni full stack dasturchi boʻlib bitirishni niyat qilganman
 </section>
 
     </main>
-    
+  
 </template>
 <script>
+
 export default {
-    name: 'MainApp'
+    name: 'MainApp',
+
 }
 </script>
 
@@ -119,7 +133,7 @@ export default {
   
 }
  .main_first{
-   background-color:rgb(124, 124, 16) ;
+   background-color:#FEDD5B;
     height: 500px;
     color: #232323;
  padding-left: -15px;
@@ -134,16 +148,17 @@ padding-top:50px ;
     width: 400px;
     height: 400px;
   transition: all 0.5s;
-    border: 1px solid #232323;
+box-shadow: #000000 0 0 3px;
+border-radius: 5px;
 }
 .main_first .container div:hover{
-      box-shadow: 0 0 15px #232323;
-      color: yellow;
-      transform: translate(7px, -7px);
+      box-shadow: 0 0 1px #232323;
+      color: rgb(0, 0, 0);
+      transform: translate(3px, -3px);
 }
 .getstyle{
     background-color: #232323;
-    color: yellow;
+    color: #FEDD5B;
 }
 .heads{
     font-size: 40px;
@@ -172,36 +187,32 @@ button{
     width: 180px;
     height: 35px;
     border-radius: 25px;
-    background-color: rgb(96, 230, 163);
+    background-color: #5BCEFE;
     color: #000000;
    border: transparent;
     font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 button:hover{
-    background-color: yellow;
-    transition: all 0.5s;
+    background-color:#5BCE8E;
     color: #232322;
-    border:ridge #232322 2px;
 }
-button:hover::after{
-    content: "→";
-    font-size: 20px;
-    position: relative;
-    left: 10px;
-    color: #232322;
-    
-}
-.font button{
+/* auditory  */
+
+.auditory_section{
+    width: 100%;
+    height: 600px;
+    margin-top: -20px;
     margin-bottom: 0;
+    background-image: url(../assets/auditor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+
+
 /* main second  */
-  .second {
-   
-    
-   
+  .second {   
     display: flex;
     justify-content: space-evenly;
    padding: 50px 0;
@@ -218,24 +229,26 @@ button:hover::after{
     width: 120px;
     height: 30px;
     font-size: 15px;
-    background-color: transparent;
+    background-color: #FEDD5B;
     border-radius: 15px;
   
     border: 2px solid #232323;
 }
 .btn_list button:hover{
-      box-shadow:inset 0 0 15px rgb(96, 230, 163);
+      box-shadow:inset 0 0 15px#5BCEFE;
     border: 2px solid  rgb(96, 230, 163);
 }
 .main_second .container div{
     width: 250px;
     height: 250px;
+    border-radius: 5px;
     text-align: center;
   transition: all 0.5s;
-     box-shadow:inset #232322 0 0 5px;
+ box-shadow: #000000 0 0 3px;
 }
 .main_second .container div:hover{
-transform: translateY(-5px);
+transform: translate(3px, -3px);
+   
 }
 .main_second .container div button{
     position: relative;
@@ -244,7 +257,7 @@ transform: translateY(-5px);
 }
 .main_second{
     width: 100%;
-   background-color:rgb(124, 124, 16) ;
+   background-color:#FEDD5B ;
 }
 .main_second .container div:nth-child(1){
      background-image: url(../assets/htmlcss.png);
