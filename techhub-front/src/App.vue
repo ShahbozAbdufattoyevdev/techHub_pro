@@ -1,31 +1,36 @@
 <template>
- 
-<HeaderSite />
- <MainApp />
-<TheFooter />
+
+  <HeaderSite />
+  <MainApp />
+  <TheFooter />
 </template>
 
 <script>
 import HeaderSite from './components/HeaderSite.vue'
 import MainApp from './components/MainApp.vue'
 import TheFooter from './components/TheFooter.vue'
-export default{
+export default {
   name: 'App',
-  components:{HeaderSite, MainApp, TheFooter},
+  components: { HeaderSite, MainApp, TheFooter },
 }
 </script>
 
 
 
-<style scoped>
-*{
-cursor: pointer;
-list-style: none;
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
 }
 
-.container{
-    width: 1290px;
-    margin: auto;
-    border: dotted 2px red;
+.container {
+  padding: 0px 12px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 </style>
